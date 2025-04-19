@@ -16,8 +16,8 @@ body {
 /* Hero Section */
 .hero {
     background-image: url('TerraCare Hero Landing.jpg');
-    background-size: cover; /* Or contain, experiment to see what looks best centered */
-    background-position: center center; /* Center horizontally and vertically */
+    background-size: cover;
+    background-position: center;
     color: #f4f4f4; /* Light text on hero */
     text-align: center;
     padding: 150px 20px;
@@ -26,7 +26,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0.5; /* Reduced opacity for less visibility (50%) */
 }
 
 .hero-content {
@@ -39,19 +38,22 @@ body {
 
 /* Appointment Button Container */
 #appointment-button-container {
+    background-image: url('TerraCare Hero Landing.jpg');
+    background-size: contain; /* Or cover, adjust as needed */
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: center; /* Center the button horizontally */
-    align-items: center; /* Center the button vertically */
-    padding: 20px; /* Add some padding around the button */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    background-color: rgba(0, 0, 0, 0.2); /* Optional: Dark background for the button container */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
 }
 
 /* Square Appointments Embed */
 #square-appointments-embed {
     width: 100%;
     max-width: 400px;
-    background: transparent; /* Ensure the embed background is transparent */
+    background: transparent;
     border: none;
 }
 
