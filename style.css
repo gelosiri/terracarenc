@@ -17,7 +17,7 @@ body {
 .hero {
     background-image: url('TerraCare Hero Landing.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     color: #f4f4f4; /* Light text on hero */
     text-align: center;
     padding: 150px 20px;
@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0.5; /* Reduced opacity for less visibility (50%) */
 }
 
 .hero-content {
@@ -38,22 +39,19 @@ body {
 
 /* Appointment Button Container */
 #appointment-button-container {
-    background-image: url('TerraCare Hero Landing.jpg');
-    background-size: contain; /* Or cover, adjust as needed */
-    background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    padding: 20px; /* Add some padding around the button */
+    border-radius: 8px; /* Optional: Dark background for the button container */
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Square Appointments Embed */
 #square-appointments-embed {
     width: 100%;
     max-width: 400px;
-    background: transparent;
+    background: transparent; /* Ensure the embed background is transparent */
     border: none;
 }
 
@@ -86,7 +84,7 @@ body {
 
 .service img {
     max-width: 80px;
-    height: auto;
+    height: auto; /* Ensure images respect their aspect ratio */
     margin-bottom: 15px;
     filter: brightness(1.2); /* Slightly brighten service icons */
 }
@@ -123,7 +121,7 @@ body {
 
 .gallery-grid img {
     width: 100%;
-    height: auto;
+    height: auto; /* Ensure images respect their aspect ratio */
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Darker shadow */
     filter: brightness(1.1); /* Slightly brighten gallery images */
