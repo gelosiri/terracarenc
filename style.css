@@ -36,11 +36,25 @@ body {
     align-items: center;
 }
 
+/* Appointment Button Container */
+#appointment-button-container {
+    background-image: url('TerraCare Hero Landing.jpg');
+    background-size: contain; /* Or cover, adjust as needed */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    padding: 20px; /* Add some padding around the button background */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
 /* Square Appointments Embed */
 #square-appointments-embed {
     width: 100%; /* Make it take the full width of its container */
     max-width: 400px; /* Adjusted max-width for a smaller appearance */
-    margin-top: 60px; /* Increased margin for spacing now that logo is gone */
+    /* Remove background or any potentially conflicting styles */
+    background: transparent;
+    border: none;
 }
 
 /* Services Section */
