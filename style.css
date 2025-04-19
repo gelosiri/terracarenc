@@ -51,7 +51,7 @@ body {
 #square-appointments-embed {
     width: 100%;
     max-width: 400px;
-    background: transparent; /* Ensure the embed background is transparent */
+    background: transparent; none;
     border: none;
 }
 
