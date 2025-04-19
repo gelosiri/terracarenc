@@ -43,7 +43,7 @@ body {
     justify-content: center; /* Center the button horizontally */
     align-items: center; /* Center the button vertically */
     padding: 20px; /* Add some padding around the button */
-    border-radius: 8px; /* Optional: Dark background for the button container */
+    border-radius: 8px; 
     background-color: rgba(0, 0, 0, 0.2);
 }
 
