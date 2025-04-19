@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0.8; /* Apply 80% opacity to the entire hero section */
 }
 
 .hero-content {
@@ -38,22 +39,19 @@ body {
 
 /* Appointment Button Container */
 #appointment-button-container {
-    background-image: url('TerraCare Hero Landing.jpg');
-    background-size: contain; /* Or cover, adjust as needed */
-    background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    padding: 20px; /* Add some padding around the button */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    background-color: rgba(0, 0, 0, 0.2); /* Optional: Dark background for the button container */
 }
 
 /* Square Appointments Embed */
 #square-appointments-embed {
     width: 100%;
     max-width: 400px;
-    background: transparent;
+    background: transparent; /* Ensure the embed background is transparent */
     border: none;
 }
 
@@ -70,11 +68,4 @@ body {
     color: #50fa7b; /* Green accent heading */
 }
 
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.service
+/* ... (rest of your CSS remains the same) ... */
