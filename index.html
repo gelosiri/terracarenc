@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Business Name]</title>
+    <title>[Your Business Name]</title>
     <meta name="description" content="[Brief description of the business]">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">TerraCare Landscaping</div>
+            <div class="logo">[Your Logo/Name]</div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu/Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="book.html">Book Now</a></li>
+                <li><a href="tel:3049418822">Call us 304-941-8822</a></li>
             </ul>
         </nav>
     </header>
@@ -24,41 +20,72 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>First cut FREE until 6/21/25</h1>
+                <h1>[Catchy Headline for the Business]</h1>
                 <p>[Short, compelling overview of what the business offers]</p>
-                <a href="menu.html" class="button">View Menu/Services</a>
+                <a href="#services" class="button">Our Services</a>
             </div>
             <div class="hero-image">
                 <img src="[path-to-hero-image]" alt="[brief description]">
             </div>
         </section>
 
-        <section class="featured-services">
-            <h2>Featured Services</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <h3>[Service 1]</h3>
-                    <p>[Brief description]</p>
-                </div>
-                <div class="service-item">
-                    <h3>[Service 2]</h3>
-                    <p>[Brief description]</p>
-                </div>
-                <div class="service-item">
-                    <h3>[Service 3]</h3>
-                    <p>[Brief description]</p>
+        <section id="services" class="featured-services section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>[Service 1]</h3>
+                        <p>[Brief description]</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>[Service 2]</h3>
+                        <p>[Brief description]</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>[Service 3]</h3>
+                        <p>[Brief description]</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="call-to-action">
-            <h2>Ready to [Benefit]?</h2>
-            <a href="book.html" class="button primary">Book Your Appointment Now!</a>
+        <section class="gallery section">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="[path-to-image-1]" alt="[Image 1 Description]">
+                    <img src="[path-to-image-2]" alt="[Image 2 Description]">
+                    <img src="[path-to-image-3]" alt="[Image 3 Description]">
+                </div>
+            </div>
+        </section>
+
+        <section class="booking section">
+            <div class="container">
+                <h2>Book an Appointment</h2>
+                <div id="booking-widget-container">
+                    [Your Booking Widget Embed Code]
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us!</p>
+                <div class="contact-details">
+                    <p><strong>Phone:</strong> 304-941-8822</p>
+                    <p><strong>Email:</strong> [Your Business Email]</p>
+                    <p><strong>Address:</strong> [Your Business Address (Optional)]</p>
+                    <a href="#" class="button primary">Send us a Message</a> </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; [Year] [Business Name]. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; [Year] [Your Business Name]. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
