@@ -1,10 +1,18 @@
 /* Global Styles */
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Example bold, modern font - ensure it's linked or available */
     margin: 0;
-    line-height: 1.6;
-    background-color: #181818; /* Dark background */
-    color: #f4f4f4; /* Light text */
+    line-height: 1.7;
+    background-color: #f9f9f9; /* Light, modern background */
+    color: #333; /* Dark, readable text */
+    -webkit-font-smoothing: antialiased; /* Improve font rendering for smoother appearance */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* More intuitive box model */
 }
 
 .container {
@@ -13,67 +21,194 @@ body {
     padding: 20px;
 }
 
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold weight */
+    color: #222;
+    line-height: 1.2;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5em;
+}
+
+a {
+    color: #007bff; /* Example primary color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.button.primary {
+    background-color: #28a745; /* Example secondary/call-to-action color */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #555;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
 /* Hero Section */
 .hero {
-    background-color: #333; /* Dark background for the hero section */
-    background-size: cover;
-    background-position: center center;
-    color: #f4f4f4; /* Light text on hero */
+    padding: 60px 20px;
     text-align: center;
-    padding: 100px 20px; /* Adjust padding for text visibility */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 1; /* Reset opacity */
 }
 
-.hero h1 {
-    font-family: 'Bebe Nueves', sans-serif; /* Apply the Bebe Nueves font */
-    font-size: 4em; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Add some space below the title */
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
 }
 
-.hero-content {
-    max-width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.hero-image {
+    margin-top: 2em;
 }
 
-/* Appointment Button Container */
-#appointment-button-container {
-    display: flex;
-    justify-content: center; /* Center the button horizontally */
-    align-items: center; /* Center the button vertically */
-    padding: 20px; /* Add some padding around the button */
-    border-radius: 8px; /* Optional: Dark background for the button container */
-    background-color: rgba(0, 0, 0, 0.2);
-    opacity: 1; /* Reset opacity to default (fully visible) */
-    margin-bottom: 20px; /* Add space below the button if needed */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Square Appointments Embed */
-#square-appointments-embed {
-    width: 100%;
-    max-width: 400px;
-    background: transparent; /* Ensure the embed background is transparent */
-    border: none;
+/* Featured Services Section */
+.featured-services {
+    padding: 60px 20px;
+    background-color: #fff;
 }
 
-/* Services Section */
-.services {
-    padding: 50px 20px;
+.featured-services h2 {
+    font-size: 2rem;
     text-align: center;
-    background-color: #222; /* Darker section background */
+    margin-bottom: 1.5em;
 }
 
-.services h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #50fa7b; /* Green accent heading */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
-/* ... (rest of your CSS remains the same) ... */
+.service-item {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75em;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    padding: 80px 20px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1em;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding-top: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
