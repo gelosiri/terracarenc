@@ -15,7 +15,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url('TerraCare Hero Landing.jpg');
+    background-image: url('HEROIMAGE1.jpg'); /* Updated background image file name */
     background-size: cover;
     background-position: center center;
     color: #f4f4f4; /* Light text on hero */
