@@ -43,7 +43,7 @@ body {
     justify-content: center; /* Center the button horizontally */
     align-items: center; /* Center the button vertically */
     padding: 20px; /* Add some padding around the button */
-    border-radius: 8px; 
+    border-radius: 8px; /* Optional: Dark background for the button container */
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -51,7 +51,7 @@ body {
 #square-appointments-embed {
     width: 100%;
     max-width: 400px;
-    background: transparent; none;
+    background: transparent; /* Ensure the embed background is transparent */
     border: none;
 }
 
@@ -65,7 +65,7 @@ body {
 .services h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #50fa7b; /* Green accent heading */
+    color: #00FECB; /* Updated to bright cyan */
 }
 
 .service-grid {
@@ -109,7 +109,7 @@ body {
 .gallery h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #50fa7b; /* Green accent heading */
+    color: #00FECB; /* Updated to bright cyan */
 }
 
 .gallery-grid {
@@ -137,7 +137,7 @@ body {
 .testimonials h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #50fa7b; /* Green accent heading */
+    color: #00FECB; /* Updated to bright cyan */
 }
 
 .testimonial-grid {
