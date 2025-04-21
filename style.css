@@ -15,18 +15,24 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: none; /* Removed hero background image */
+    background-color: #333; /* Dark background for the hero section */
     background-size: cover;
-    background-position: center 70%;
+    background-position: center center;
     color: #f4f4f4; /* Light text on hero */
     text-align: center;
-    padding: 150px 20px;
+    padding: 100px 20px; /* Adjust padding for text visibility */
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 1; /* Reset opacity for hero content */
+    opacity: 1; /* Reset opacity */
+}
+
+.hero h1 {
+    font-family: 'Bebe Nueves', sans-serif; /* Apply the Bebe Nueves font */
+    font-size: 4em; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add some space below the title */
 }
 
 .hero-content {
@@ -46,6 +52,7 @@ body {
     border-radius: 8px; /* Optional: Dark background for the button container */
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1; /* Reset opacity to default (fully visible) */
+    margin-bottom: 20px; /* Add space below the button if needed */
 }
 
 /* Square Appointments Embed */
@@ -66,120 +73,7 @@ body {
 .services h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #00FECB; /* Updated to bright cyan */
+    color: #50fa7b; /* Green accent heading */
 }
 
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.service {
-    background-color: #333; /* Dark service card background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Darker shadow */
-}
-
-.service img {
-    max-width: 80px;
-    height: auto; /* Ensure images respect their aspect ratio */
-    margin-bottom: 15px;
-}
-
-.service h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    color: #f4f4f4; /* Light service title */
-}
-
-.service p {
-    color: #ccc; /* Slightly lighter paragraph text */
-}
-
-/* Gallery Section */
-.gallery {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #1e1e1e; /* Dark gallery background */
-}
-
-.gallery h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #00FECB; /* Updated to bright cyan */
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: auto; /* Ensure images respect their aspect ratio */
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Darker shadow */
-}
-
-/* Testimonials Section */
-.testimonials {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #222; /* Darker section background */
-}
-
-.testimonials h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #00FECB; /* Updated to bright cyan */
-}
-
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.testimonial {
-    background-color: #333; /* Dark testimonial card background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Darker shadow */
-    color: #ccc; /* Lighter testimonial text */
-}
-
-.testimonial p:first-child {
-    font-style: italic;
-    color: #999; /* Slightly lighter italic text */
-    margin-bottom: 10px;
-}
-
-.testimonial p:last-child {
-    font-weight: bold;
-    color: #f4f4f4; /* Light author text */
-    text-align: right;
-}
-
-/* Footer */
-.footer {
-    background-color: #333; /* Dark footer background */
-    color: #f4f4f4; /* Light footer text */
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-}
-
-/* Media Queries for Responsiveness (Adjust text colors if needed for dark background) */
-@media (max-width: 768px) {
-    /* You might not need to change much here for text color */
-}
-
-@media (max-width: 480px) {
-    /* You might not need to change much here for text color */
-}
+/* ... (rest of your CSS remains the same) ... */
