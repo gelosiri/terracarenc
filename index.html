@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TerraCare Landscaping</title>
-    <meta name="description" content="[Brief description of the business]">
+    <meta name="description" content="TerraCare Landscaping: Brunswick County's premier lawn care and garden services. Schedule your free estimate today!">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,11 +21,11 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>NEW CLIENT SPECIAL!</h1>
-                <p>First Cut FREE thru 6/21/25</p>
-                <a href="#services" class="button">Schedule appointment</a>
+                <p>First Cut FREE thru June 21, 2025</p>
+                <a href="#appointment-section" class="button">Schedule appointment</a>
             </div>
             <div class="hero-image">
-                <img src="[path-to-hero-image]" alt="[brief description]">
+                <img src="[path-to-hero-image]" alt="Beautifully maintained lawn">
             </div>
         </section>
 
@@ -36,16 +36,27 @@
                     <div class="service-item">
                         <h3>Weekly/Bi-Weekly/Monthly</h3>
                         <p>Standard lawn upkeep. (Includes weedeating & edging)</p>
+                        <a href="#appointment-section" class="button secondary">Book Now</a>
                     </div>
                     <div class="service-item">
                         <h3>Hedge Trimming</h3>
                         <p>Keep your bushes/hedges pristine!</p>
+                        <a href="#appointment-section" class="button secondary">Book Now</a>
                     </div>
                     <div class="service-item">
                         <h3>Hardscaping</h3>
                         <p>Garden design, installation, and removal.</p>
+                        <a href="#appointment-section" class="button secondary">Book Now</a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="appointment-section" class="booking section">
+            <div class="container">
+                <h2>Book an Appointment</h2>
+                <div id="booking-widget-container">
+                    <script src='https://square.site/appointments/buyer/widget/rz9xz5xznr80pw/LYN17JW9ZESTW.js'></script></div>
             </div>
         </section>
 
@@ -53,18 +64,9 @@
             <div class="container">
                 <h2>Gallery</h2>
                 <div class="gallery-grid">
-                    <img src="[path-to-image-1]" alt="[Image 1 Description]">
-                    <img src="[path-to-image-2]" alt="[Image 2 Description]">
-                    <img src="[path-to-image-3]" alt="[Image 3 Description]">
-                </div>
-            </div>
-        </section>
-
-        <section class="booking section">
-            <div class="container">
-                <h2>Book an Appointment</h2>
-                <div id="booking-widget-container">
-                    <!-- Start Square Appointments Embed Code --><script src='https://square.site/appointments/buyer/widget/rz9xz5xznr80pw/LYN17JW9ZESTW.js'></script><!-- End Square Appointments Embed Code -->
+                    <img src="[path-to-image-1]" alt="Landscaping project example 1">
+                    <img src="[path-to-image-2]" alt="Landscaping project example 2">
+                    <img src="[path-to-image-3]" alt="Landscaping project example 3">
                 </div>
             </div>
         </section>
@@ -77,7 +79,8 @@
                     <p><strong>Phone:</strong> 304-941-8822</p>
                     <p><strong>Email:</strong> terracarenc@gmail.com</p>
                     <p><strong>Address:</strong> 1480 Gate Hill Rd Se</p>
-                    <a href="#" class="button primary">Call to book</a> </div>
+                    <a href="tel:3049418822" class="button primary">Call to book</a>
+                </div>
             </div>
         </section>
     </main>
@@ -87,5 +90,24 @@
             <p>&copy; 2025 TerraCare Landscaping. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function scrollToSection(targetId) {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollToAppointmentButtons = document.querySelectorAll('a[href="#appointment-section"]');
+            scrollToAppointmentButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    scrollToSection('appointment-section');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
