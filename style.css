@@ -1,18 +1,18 @@
 /* Global Styles */
 body {
-    font-family: 'Montserrat', sans-serif; /* Example bold, modern font - ensure it's linked or available */
+    font-family: 'Montserrat', sans-serif; /* Ensure font is linked in HTML */
     margin: 0;
     line-height: 1.7;
-    background-color: #f9f9f9; /* Light, modern background */
-    color: #333; /* Dark, readable text */
-    -webkit-font-smoothing: antialiased; /* Improve font rendering for smoother appearance */
+    background-color: #f9f9f9;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box; /* More intuitive box model */
+    box-sizing: border-box;
 }
 
 .container {
@@ -24,20 +24,22 @@ body {
 /* Typography */
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700; /* Bold weight */
+    font-weight: 700;
     color: #222;
     line-height: 1.2;
     margin-bottom: 1em;
+    text-align: center; /* Center headings by default for a simpler layout */
 }
 
 p {
     font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 1.5em;
+    text-align: center; /* Center paragraphs by default */
 }
 
 a {
-    color: #007bff; /* Example primary color */
+    color: #007bff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -62,11 +64,31 @@ a:hover {
 }
 
 .button.primary {
-    background-color: #28a745; /* Example secondary/call-to-action color */
+    background-color: #28a745;
 }
 
 .button:hover {
     background-color: #0056b3;
+}
+
+.button.secondary {
+    background-color: #6c757d; /* Example grey color */
+    color: #fff; /* Ensure text is readable on the grey background */
+    text-decoration: none; /* Remove default link underline */
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif; /* Or your chosen font */
+    font-size: 1rem;
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: inline-block; /* Allows setting padding and margin */
+    margin-top: 10px; /* Add some space above the button */
+}
+
+.button.secondary:hover {
+    background-color: #5a6268;
 }
 
 /* Header and Navigation */
@@ -107,10 +129,14 @@ nav ul li:first-child {
 nav ul li a {
     color: #555;
     font-weight: 500;
+    padding: 10px 15px; /* Add some padding to the link */
+    border-radius: 5px; /* Optional: rounded corners for the button-like link */
+    background-color: #f2f2f2; /* Optional: background color for the button-like link */
 }
 
 nav ul li a:hover {
     color: #007bff;
+    background-color: #e9ecef; /* Optional: hover background color */
 }
 
 /* Hero Section */
@@ -143,7 +169,6 @@ nav ul li a:hover {
 
 .featured-services h2 {
     font-size: 2rem;
-    text-align: center;
     margin-bottom: 1.5em;
 }
 
@@ -165,15 +190,64 @@ nav ul li a:hover {
     margin-bottom: 0.75em;
 }
 
-/* Call to Action Section */
-.call-to-action {
-    padding: 80px 20px;
+/* Gallery Section */
+.gallery {
+    padding: 60px 20px;
     background-color: #e9ecef;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Booking Section */
+.booking {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center; /* Center the widget if needed */
+}
+
+.booking h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+
+#booking-widget-container {
+    /* You might want to add some styling to control the width or alignment */
+    max-width: 600px; /* Example max width for the widget */
+    margin: 0 auto; /* Center the widget horizontally */
+}
+
+/* Contact Info Section */
+.contact-info {
+    padding: 60px 20px;
+    background-color: #f2f2f2;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+
+.contact-details {
     text-align: center;
 }
 
-.call-to-action h2 {
-    font-size: 2.5rem;
+.contact-details p {
     margin-bottom: 1em;
 }
 
@@ -208,7 +282,8 @@ footer {
         font-size: 2.5rem;
     }
 
-    .services-grid {
+    .services-grid,
+    .gallery-grid {
         grid-template-columns: 1fr;
     }
 }
