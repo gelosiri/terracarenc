@@ -72,8 +72,8 @@ a:hover {
 }
 
 .button.secondary {
-    background-color: #6c757d; /* Example grey color */
-    color: #fff; /* Ensure text is readable on the grey background */
+    background-color: #73ac26; /* Updated to the desired green color */
+    color: #fff; /* Ensure text is readable on the green background */
     text-decoration: none; /* Remove default link underline */
     border-radius: 8px;
     font-weight: 600;
@@ -88,7 +88,7 @@ a:hover {
 }
 
 .button.secondary:hover {
-    background-color: #5a6268;
+    background-color: #5e881e; /* Slightly darker shade for hover effect */
 }
 
 /* Header and Navigation */
