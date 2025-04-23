@@ -295,3 +295,31 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ... (Your existing CSS) ... */
+
+/* Basic Section Styling */
+.section {
+    padding: 60px 20px; /* Add vertical padding to all sections */
+}
+
+.hero {
+    background-color: #f9f9f9; /* Light background for the hero */
+    text-align: center; /* Center content in hero */
+}
+
+.featured-services {
+    background-color: #fff; /* White background for services */
+}
+
+.gallery {
+    background-color: #e9ecef; /* Light grey for gallery */
+    text-align: center; /* Center gallery content */
+}
+
+.contact-info {
+    background-color: #f2f2f2; /* Another light grey for contact */
+    text-align: center; /* Center contact info */
+}
+
+/* ... (Rest of your CSS) ... */
