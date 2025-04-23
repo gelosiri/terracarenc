@@ -51,7 +51,7 @@ a:hover {
 .button {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #007bff;
+    background-color: #73ac26; /* Updated to the same green as services buttons */
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
@@ -169,6 +169,7 @@ nav ul li a:hover {
 .hero {
     padding: 60px 20px;
     text-align: center;
+    background-color: #f9f9f9; /* Light background for the hero */
 }
 
 .hero-content h1 {
@@ -190,7 +191,7 @@ nav ul li a:hover {
 /* Featured Services Section */
 .featured-services {
     padding: 60px 20px;
-    background-color: #fff;
+    background-color: #fff; /* White background for services */
 }
 
 .featured-services h2 {
@@ -219,7 +220,8 @@ nav ul li a:hover {
 /* Gallery Section */
 .gallery {
     padding: 60px 20px;
-    background-color: #e9ecef;
+    background-color: #e9ecef; /* Light grey for gallery */
+    text-align: center; /* Center gallery content */
 }
 
 .gallery h2 {
@@ -243,7 +245,8 @@ nav ul li a:hover {
 /* Contact Info Section */
 .contact-info {
     padding: 60px 20px;
-    background-color: #f2f2f2;
+    background-color: #f2f2f2; /* Another light grey for contact */
+    text-align: center; /* Center contact info */
 }
 
 .contact-info h2 {
@@ -257,6 +260,23 @@ nav ul li a:hover {
 
 .contact-details p {
     margin-bottom: 1em;
+}
+
+/* Booking Section */
+.booking {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center; /* Center the widget if needed */
+}
+
+.booking h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+
+#booking-widget-container {
+    max-width: 600px; /* Example max width for the widget */
+    margin: 0 auto; /* Center the widget horizontally */
 }
 
 /* Footer */
@@ -295,31 +315,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
-/* ... (Your existing CSS) ... */
-
-/* Basic Section Styling */
-.section {
-    padding: 60px 20px; /* Add vertical padding to all sections */
-}
-
-.hero {
-    background-color: #f9f9f9; /* Light background for the hero */
-    text-align: center; /* Center content in hero */
-}
-
-.featured-services {
-    background-color: #fff; /* White background for services */
-}
-
-.gallery {
-    background-color: #e9ecef; /* Light grey for gallery */
-    text-align: center; /* Center gallery content */
-}
-
-.contact-info {
-    background-color: #f2f2f2; /* Another light grey for contact */
-    text-align: center; /* Center contact info */
-}
-
-/* ... (Rest of your CSS) ... */
