@@ -91,7 +91,207 @@ a:hover {
     background-color: #5e881e; /* Slightly darker shade for hover effect */
 }
 
-.hero-button {
+.hero.button { /* Targeting the button with both 'hero' and 'button' classes */
     position: relative; /* Needed for absolute positioning of pseudo-element */
     overflow: hidden; /* Clip the pseudo-element */
-    transition:
+    transition: color 0.3s ease; /* Transition for text color */
+}
+
+.hero.button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%; /* Start with 0 height */
+    background-color: #5e881e; /* Darker green for the fill */
+    transition: height 0.3s ease-in-out; /* Transition for the height change */
+    z-index: -1; /* Place the fill behind the text */
+}
+
+.hero.button:hover {
+    color: #fff; /* Keep text white on hover */
+}
+
+.hero.button:hover::before {
+    height: 100%; /* Fill the button height on hover */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #555;
+    font-weight: 500;
+    padding: 10px 15px; /* Add some padding to the link */
+    border-radius: 5px; /* Optional: rounded corners for the button-like link */
+    background-color: #f2f2f2; /* Optional: background color for the button-like link */
+}
+
+nav ul li a:hover {
+    color: #007bff;
+    background-color: #e9ecef; /* Optional: hover background color */
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.hero-image {
+    margin-top: 2em;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Services Section */
+.featured-services {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.featured-services h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75em;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 60px 20px;
+    background-color: #e9ecef;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info Section */
+.contact-info {
+    padding: 60px 20px;
+    background-color: #f2f2f2;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-details p {
+    margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1em;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding-top: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
