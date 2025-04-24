@@ -50,8 +50,8 @@ a:hover {
 
 .button {
     display: inline-block;
-    padding: 12px 24px;
-    background-color: #73ac26; /* Updated to the same green as services buttons */
+    padding: 10px 20px; /* Reduced padding for a slimmer look */
+    background-color: #73ac26; /* Green background */
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
@@ -72,43 +72,43 @@ a:hover {
 }
 
 .button.secondary {
-    background-color: #73ac26; /* Updated to the desired green color */
-    color: #fff; /* Ensure text is readable on the green background */
-    text-decoration: none; /* Remove default link underline */
+    background-color: #73ac26; /* Green background */
+    color: #fff;
+    text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
     transition: background-color 0.3s ease;
     border: none;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif; /* Or your chosen font */
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    padding: 10px 20px; /* Adjust padding as needed */
-    display: inline-block; /* Allows setting padding and margin */
-    margin-top: 10px; /* Add some space above the button */
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .button.secondary:hover {
-    background-color: #5e881e; /* Slightly darker shade for hover effect */
+    background-color: #5e881e; /* Darker green hover */
 }
 
 .hero.button { /* Targeting the button with both 'hero' and 'button' classes */
     background-color: #333; /* Dark grey/almost black background */
     color: #fff; /* White text */
-    position: relative; /* Needed for absolute positioning of pseudo-element */
-    overflow: hidden; /* Clip the pseudo-element */
-    transition: color 0.3s ease; /* Transition for text color */
+    position: relative; /* Crucial for positioning the fill layer */
+    overflow: hidden; /* Ensures the fill stays within the button */
+    transition: color 0.3s ease; /* For text color transition (optional here) */
 }
 
 .hero.button::before {
     content: "";
-    position: absolute;
+    position: absolute; /* Positions the fill layer */
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 0%; /* Start with 0 height */
-    background-color: #73ac26; /* Green from service buttons for the fill */
-    transition: height 0.3s ease-in-out; /* Transition for the height change */
-    z-index: -1; /* Place the fill behind the text */
+    height: 0%; /* Starts with zero height */
+    background-color: #73ac26; /* The green fill color */
+    transition: height 0.3s ease-in-out; /* Animates the height change */
+    z-index: -1; /* Places the fill behind the text */
 }
 
 .hero.button:hover {
@@ -116,7 +116,7 @@ a:hover {
 }
 
 .hero.button:hover::before {
-    height: 100%; /* Fill the button height on hover */
+    height: 100%; /* Fills the button on hover */
 }
 
 /* Header and Navigation */
