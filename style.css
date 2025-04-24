@@ -108,7 +108,7 @@ a:hover {
 }
 
 .hero.button:hover::before {
-    height: 100%; /* This should make it fill with green on hover */
+    height: 100%; /* Ensures it fills with green on hover */
 }
 
 /* Header and Navigation */
