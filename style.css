@@ -86,6 +86,9 @@ a:hover {
     position: relative;
     overflow: hidden;
     transition: color 0.3s ease;
+    /* Override the large vertical padding from .hero */
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .hero.button::before {
@@ -101,11 +104,11 @@ a:hover {
 }
 
 .hero.button:hover {
-    color: #fff; /* Keep text white on hover */
+    color: #fff;
 }
 
 .hero.button:hover::before {
-    height: 100%; /* Fill the button on hover */
+    height: 100%; /* This should make it fill with green on hover */
 }
 
 /* Header and Navigation */
@@ -158,9 +161,9 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    padding: 60px 20px;
+    padding: 60px 20px; /* Keep this for overall section padding */
     text-align: center;
-    background-color: #f9f9f9; /* Light background for the hero */
+    background-color: #f9f9f9;
 }
 
 .hero-content h1 {
